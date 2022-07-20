@@ -1,0 +1,144 @@
+@media screen and (max-width:480px){
+  body{
+    flex-direction: column;
+    position: relative;
+  }
+  main{width: 100vw;
+  overflow: hidden;
+}
+  .navbar{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 0, 0, 0.781);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    transform: scale(0);
+  }
+  .nav{
+    padding: 3rem;
+
+  }
+  .navbar > h3{display: none;}
+  .navbar ul li a{
+    color: chartreuse;
+
+  }
+  .navbar ul{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+  .basket{ padding: 10px;}
+  .navbar ul li{
+    display: block;
+    width: 100%;
+  }
+  .navbar-image{
+    display: none;
+  }
+  hr{display: none;}
+  .basket::before{display: none;}
+  h3{
+    font-size: 2rem;
+    display: inline;
+    transform: translate(3rem,-4rem);
+  }
+  .main-picture{
+    width: 100%;
+    padding: 10%;
+  }
+  .applications{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+  }
+  main{
+    width: 100%;
+  }
+  .quote{
+    margin-top: 0;
+  }
+  .search-part h4 {font-size: 1rem;}
+  .search-part{
+    display: inline;
+    margin: 1rem 0 0 0;
+  }
+  .option{order: -1;
+  display: inline;}
+  .search-box{width: 100%;}
+  .outlander{overflow: hidden;
+    width: 100%;
+  }
+  .menu{width: 100%;}
+  .outlander{
+    margin-top: 5rem;
+  }
+  .search-box img{
+    transform: translateX(-8rem);
+  }
+  /* .nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: peru;
+    height: 100vh;
+    z-index: 4;
+  }
+  .nav ul{
+    row-gap: 10px;
+    padding: 15px 5px;
+    align-items: flex-start;
+  } */
+  .basket{visibility: hidden;}
+  #navigation-checkbox{
+    position: fixed;
+    width: 30px;
+    height:30px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  label{
+    width: 25px;
+    height: 3px;
+    background-color:chartreuse;
+    position: absolute;
+  }
+  label:before,
+  label:after{
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color:chartreuse;
+    top: -10px;
+    left: 0;
+    position: absolute;
+  }
+  label:after{
+    top: 10px;
+  }
+  label{
+    top: 0;
+    left: 10px;
+    transform: translateY(30px);
+  }
+  label:hover{
+    transform: rotate(5deg);
+    transition: 1s ease;
+  }
+}
+@media screen and (max-width:1200px){
+  .navbar img{
+    display: none;
+  }
+}
